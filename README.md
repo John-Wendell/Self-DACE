@@ -1,6 +1,8 @@
 # Self-DACE LLIE Method
 Official pytorch version for Self-Reference Deep Adaptive Curve Estimation for Low-Light Image Enhancement
 
+Latset version code is updated!
+
 - Paper is avalible at:
 - Old version: [arXiv version - Self-Reference Deep Adaptive Curve Estimation for Low-Light Image Enhancement](https://arxiv.org/pdf/2308.08197.pdf)
 - New version: code is uploaded.
@@ -87,13 +89,14 @@ Test dates should be placed in `codes_SelfDACE/stage2/data/test_data/low_eval`,
 And then results would be found in `codes_SelfDACE/stage2/data/result/low_eval`.
 
 # How to train it
-## Prerequisite
+## Old Version
+### Prerequisite
 ```
 cd ./codes_SelfDACE
 pip install -r ./requirements.txt
 ```
 
-## Train Stage-I (only enhancing luminance)
+### Train Stage-I (only enhancing luminance)
 1.
       You should download the training dataset from [SCIE_part1](https://github.com/csjcai/SICE) and resize all images to 256x256.
       Or you could download it directly from [SCIE_part1_ZeroDCE_version](https://github.com/Developer-Zer0/ZeroDCE), of which iamges have been cropped to 512x512 already. If you want to use it in your work, please cite [SCIE_part1](https://github.com/csjcai/SICE).
@@ -104,7 +107,7 @@ pip install -r ./requirements.txt
       python train_1stage.py
       ```
 
-## Train Stage-II (only denoising)
+### Train Stage-II (only denoising)
 
 1.
       Copy the `pre-trained model` and `training dataset` from stage1, and put `pre-trained model` of Stage-I in `./stage2/snapshots_light`
@@ -114,6 +117,24 @@ pip install -r ./requirements.txt
       cd ./stage2
       python train_2stage.py
       ```
+
+## New Version
+### Train Normal-Size Version Stage-I (only enhancing luminance)
+```
+cd codes_SelfDACE/new_version/stage_1_lit
+train_1stage.py
+```
+### Train Light-Weight Version Stage-I (only enhancing luminance)
+```
+cd codes_SelfDACE/new_version/stage_1_small_lit
+train_1stage.py
+```
+### Train Stage-II (only denoising)
+```
+cd codes_SelfDACE/new_version/stage_2_denoising
+train_2stage.py
+```
+
 # Acknowledgment
 This paper gets a big inspiration from [ZeroDCE](https://github.com/Li-Chongyi/Zero-DCE).
 
