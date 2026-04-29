@@ -5,7 +5,7 @@ Latset version code is updated!
 
 - Paper is avalible at:
 - Old version: [arXiv version - Self-Reference Deep Adaptive Curve Estimation for Low-Light Image Enhancement](https://arxiv.org/pdf/2308.08197.pdf)
-- New version: code is uploaded.
+- New version: [Self-DACE++: Robust Low-Light Enhancement via Efficient Adaptive Curve Estimation](https://arxiv.org/abs/2604.25367.pdf)
 
 # Hope AI would illuminate our unknown and invisible path to the future as it illuminates low-light images!
 
