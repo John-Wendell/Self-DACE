@@ -140,12 +140,22 @@ This paper gets a big inspiration from [ZeroDCE](https://github.com/Li-Chongyi/Z
 
 # Citation
 If you find our work useful for your research, please cite our paper
+Self-DACE
 ```
 @article{wen2023self,
   title={Self-Reference Deep Adaptive Curve Estimation for Low-Light Image Enhancement},
   author={Wen, Jianyu and Wu, Chenhao and Zhang, Tong and Yu, Yixuan and Swierczynski, Piotr},
   journal={arXiv preprint arXiv:2308.08197},
   year={2023}
+}
+```
+Self-DACE++
+```
+@article{wen2026self,
+  title={Self-DACE++: Robust Low-Light Enhancement via Efficient Adaptive Curve Estimation},
+  author={Wen, Jianyu and Xie, Jun and Chen, Feng and Wang, Zhepeng and Wu, Chenhao and Zhang, Tong and Yu, Yixuan and Swierczynski, Piotr},
+  journal={arXiv preprint arXiv:2604.25367},
+  year={2026}
 }
 ```
 - Thanks for all related work and workers.
